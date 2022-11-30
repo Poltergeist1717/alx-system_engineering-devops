@@ -1,2 +1,2 @@
 #!/bin/bash
-mk *[:upper:] /tmp/u
+mk [:upper:]* /tmp/u
