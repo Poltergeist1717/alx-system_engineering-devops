@@ -2,8 +2,8 @@
 # configures a new Ubuntu machine
 
 # Install nginx on web-01 server
-apt-get -y update
-apt-get -y install nginx
+apt-get update -y
+apt-get install nginx -y
 
 # Add custom response header to know the server name for debugging
 HOST_NAME=$(hostname)

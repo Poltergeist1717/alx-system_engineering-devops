@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+k#!/usr/bin/env bash
 # configures a new HAproxy as a load balancer
 
 # Install HAproxy on a server
@@ -13,8 +13,8 @@ frontend olamidelateef.tech
 
 backend web_servers
         balance roundrobin
-        server 64820-web-01 54.145.156.222
-        server 64820-web-02 54.144.143.51
+        server 215514-web-01 34.229.161.138
+        server 215514-web-02 3.84.161.114
 ' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAproxy service
