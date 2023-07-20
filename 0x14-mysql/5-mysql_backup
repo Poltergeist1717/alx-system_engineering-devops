@@ -1,0 +1,9 @@
+#!/bin/env bash
+
+password="$1"
+timestamp=$(date +"%d-%m-%Y")
+dump_filename="backup.sql"
+archive_filename="$timestamp.tar.gz"
+
+mysqldump -u root -p"$password" --all-databases > "$dump_filename"
+tar -czvf "$archive_filename" "$dump_filename"
