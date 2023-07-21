@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #Checks if the number of arguments is not equal to 1
-#Echoes usage
+#Output usage
 #Exit with 1
-if [$# -ne 1]; then
-	echo "Usage: $0 <username>"
-	exit 1
+if [ $# -ne 1 ]; then
+ echo "Usage: $0 <username>"
+ exit 1
 fi
 
 #Stores the provided username in a variable
