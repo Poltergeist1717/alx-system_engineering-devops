@@ -1,4 +1,5 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 #Runs the whoami command under the provided username
 sudo -u "$1" whoami
